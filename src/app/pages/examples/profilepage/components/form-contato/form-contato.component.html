@@ -1,0 +1,61 @@
+<form [formGroup]="formContato" (ngSubmit)="enviarEmailContato()">
+    <div class="row">
+      <div class="col-md-6">
+        <mat-form-field fxFlex="100" class="" appearance="outline">
+          <mat-label> Nome: </mat-label>
+          <input matInput class="" formControlName="nome" type="text" />
+          <mat-error *ngIf="formControls.nome.errors && formControls.nome.errors.required">Escreva seu Nome</mat-error>
+        </mat-form-field>
+      </div>
+      <div class="col-md-6">
+        <mat-form-field fxFlex="100" class="" appearance="outline">
+          <mat-label> Email: </mat-label>
+          <input matInput formControlName="email"
+            class=" "
+            type="email"
+          />
+          <mat-error *ngIf="formControls.email.errors && formControls.email.errors.required">Escreva seu Email</mat-error>
+        </mat-form-field>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <mat-form-field fxFlex="100" appearance="outline" class="">
+          <mat-label> Telefone: </mat-label>
+          <input matInput formControlName="tel"
+            class=""
+            type="text"
+          />
+        </mat-form-field>
+      </div>
+      <div class="col-md-6">
+        <mat-form-field fxFlex="100" appearance="outline" class="">
+          <mat-label> Empresa: </mat-label>
+          <input matInput formControlName="empresa"
+            class=""
+            type="text"
+          />
+        </mat-form-field>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12"  fxFlex="100">
+        <mat-form-field fxFlex="100" appearance="outline" class="">
+          <mat-label> Mensagem: </mat-label>
+          <input matInput formControlName="mensagem"
+            class=""
+            placeholder="Quero te contratar :)"
+            type="text"
+          />
+          <mat-error *ngIf="formControls.mensagem.errors && formControls.mensagem.errors.required">Escreva uma Mensagem</mat-error>
+        </mat-form-field>
+      </div>
+    </div>
+    <button 
+      class="btn btn-danger btn-round float-right"
+      placement="right"
+      type="submit"
+    >
+      Clique para Testar
+    </button>
+  </form>

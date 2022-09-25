@@ -1,0 +1,324 @@
+<nav
+  class="navbar navbar-expand-lg fixed-top navbar-transparent"
+  color-on-scroll="100"
+  id="navbar-top"
+>
+  <div class="container">
+    <div class="navbar-translate">
+      <a
+        class="navbar-brand"
+        [routerLink]="['']"
+        placement="bottom"
+        tooltip="Free Teamplate BLK Design: Angular + Bootstrap 4 + Poppins Font "
+      >
+        <span> By Khauam -> Site feito com Angular 11 </span> 
+        <p>Passe o mouse sobre os componentes :)</p>
+      </a>
+      <!-- <button
+        aria-controls="navigation-index"
+        aria-label="Toggle navigation"
+        class="navbar-toggler navbar-toggler"
+        [attr.aria-expanded]="!isCollapsed"
+        (click)="isCollapsed = !isCollapsed"
+        id="navigation"
+        type="button"
+      >
+        <span class="navbar-toggler-bar bar1"> </span>
+        <span class="navbar-toggler-bar bar2"> </span>
+        <span class="navbar-toggler-bar bar3"> </span>
+      </button> -->
+    </div>
+    <!-- <div
+      class="navbar-collapse justify-content-end"
+      [collapse]="isCollapsed"
+      id="navigation"
+    >
+      <div class="navbar-collapse-header">
+        <div class="row">
+          <div class="col-6 collapse-brand"><a> BLK• </a></div>
+          <div class="col-6 collapse-close text-right">
+            <button
+              aria-controls="navigation-index"
+              aria-label="Toggle navigation"
+              class="navbar-toggler"
+              [attr.aria-expanded]="!isCollapsed"
+              (click)="isCollapsed = !isCollapsed"
+              id="navigation"
+              type="button"
+            >
+              <i class="tim-icons icon-simple-remove"> </i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <ul class="navbar-nav">
+        <li class="nav-item p-0">
+          <a
+            class="nav-link"
+            href="https://twitter.com/CreativeTim"
+            placement="bottom"
+            target="_blank"
+            tooltip="Follow us on Twitter"
+          >
+            <i class="fab fa-twitter"> </i>
+            <p class="d-lg-none d-xl-none">Twitter</p>
+          </a>
+        </li>
+        <li class="nav-item p-0">
+          <a
+            class="nav-link"
+            href="https://www.facebook.com/CreativeTim"
+            placement="bottom"
+            target="_blank"
+            tooltip="Like us on Facebook"
+          >
+            <i class="fab fa-facebook-square"> </i>
+            <p class="d-lg-none d-xl-none">Facebook</p>
+          </a>
+        </li>
+        <li class="nav-item p-0">
+          <a
+            class="nav-link"
+            href="https://www.instagram.com/CreativeTimOfficial"
+            placement="bottom"
+            target="_blank"
+            tooltip="Follow us on Instagram"
+          >
+            <i class="fab fa-instagram"> </i>
+            <p class="d-lg-none d-xl-none">Instagram</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/home']"> Back to Kit </a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            href="https://github.com/creativetimofficial/blk-design-system-angular/issues"
+          >
+            Have an issue?
+          </a>
+        </li>
+      </ul>
+    </div> -->
+  </div>
+</nav>
+<div class="wrapper">
+  <div class="page-header">
+    <img class="dots" src="assets/img/dots.png" />
+
+    <img class="path" src="assets/img/path4.png" />
+
+    <div class="container align-items-center">
+      <div class="row">
+        <div class="col-lg-6 col-md-6">
+          <h1 class="profile-title text-left">Khauam Kleber F. Cardoso</h1>
+          <h5 class="text-on-back">Dev</h5>
+          <p class="profile-description">
+            Desenvolvedor full-stack procurando oportunidades no mercado de trabalho para inicio imediato, preferencialmente trabalhando como 
+            front-end utilizando Angular 2+.
+          </p>
+          <div class="btn-wrapper profile pt-3" >
+            <a tooltip="Me chama no whats"
+              class="btn btn-icon btn-whatsapp btn-round mr-1"
+              href="https://api.whatsapp.com/send?phone=55041996201262"
+              target="_blank"
+              >
+              <i class="fab fa-whatsapp"> </i>
+            </a>
+            <a
+              class="btn btn-icon btn-linkedin btn-round mr-1"
+              href="https://www.linkedin.com/in/khauam/"
+              target="_blank"
+            >
+              <i class="fab fa-linkedin"> </i>
+            </a>
+            <a
+              class="btn btn-icon btn-facebook btn-round mr-1"
+              href="https://www.facebook.com/KhauamK/"
+              target="_blank"
+            >
+              <i class="fab fa-facebook-square"> </i>
+            </a>
+            <a
+              class="btn btn-icon btn-instagram btn-round"
+              href="https://www.instagram.com/khauamkleber/"
+              target="_blank"
+            >
+              <i class="fab fa-instagram"> </i> 
+            </a>
+
+            <a tooltip="Clique para baixar meu curriculo"
+              class="btn btn-icon btn-curriculo btn-round"
+              href="https://www.instagram.com/khauamkleber/"
+              href="assets/curriculo/cv2022.pdf" download="cv2022.pdf"
+            >
+             <i class="fas fa-file-pdf"></i> 
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 ml-auto mr-auto">
+          <div class="card card-coin card-plain">
+            <div class="card-header">
+              <img
+                class="img-center img-fluid rounded-circle"
+                src="assets/img/profilePic.jpg" 
+              />
+
+              <h4 class="title">Sobre</h4>
+            </div>
+            <div class="card-body">
+              <tabset
+                class="nav-tabs-danger justify-content-center tab-subcategories"
+              >
+                <tab heading="Conhecimentos" popover="Tabela feita com Angular Material :)"  triggers="mouseenter:mouseleave"
+                  type="button">
+                  <div class="">
+                    <app-tabela-conhecimentos> </app-tabela-conhecimentos>
+                  </div>
+                </tab>
+                <tab heading="Experiência">
+                  <h1>Dev. Angular e Java</h1>
+                  <p>Quality Planning Sistemas Ltda</p>
+                  <p>Agosto/2017 - Abril/2021 (3 anos 9 meses) </p>
+                  <br>
+                  <p class="text-left">
+                    Programador Fullstack criando e fazendo manutenção para o sistema principal de Gerenciamento Escolar
+                    usando Angular + Springboot (Java) e MySQL.
+                    Em paralelo alocado em projetos, como principal o sistema de Estoque Gestox, sistema utilizado por empresas como Suzano e Copel.
+                  </p>
+                </tab>
+                <tab heading="Formação">
+                  <h1>Universidade Tuiuti do Paraná</h1>
+                  <p>Graduação, Análise e Desenvolvimento de Sistemas</p>
+                  <p>Janeiro/2015 - Junho/2017</p>
+                  <br>
+                  <p>Carteira de Habilitação B</p>
+                  <br>
+                  <p>Inglês Básico/Têcnico</p>
+                </tab>
+              </tabset>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="col-md-6">
+          <div class="row justify-content-between align-items-center">
+            <carousel [showIndicators]="true">
+              <slide >
+                <img 
+                  alt="First slide"
+                  class="d-block"
+                  src="assets/img/gestox.png"
+                />
+
+                <div class="carousel-caption d-none d-md-block" popover="Angular 6+ | Spring Boot | MySQL"  triggers="mouseenter:mouseleave"> 
+                  <h5>Gestox RFID - Alocado</h5>
+                </div>
+              </slide>
+              <slide>
+                <img
+                  alt="Second slide"
+                  class="d-block"
+                  src="assets/img/quality.png"
+                />
+
+                <div class="carousel-caption d-none d-md-block" popover="Angular 6+ | Spring Boot | MySQL"  triggers="mouseenter:mouseleave" >
+                  <h5>Sistema de Gerenciamento Escolar - Produto principal da Quality Sistemas</h5>
+                </div>
+              </slide>
+              <slide>
+                <img
+                  alt="Third slide"
+                  class="d-block"
+                  src="assets/img/reyInvest.png"
+                />
+
+                <div class="carousel-caption d-none d-md-block" popover="Angular 9+ | NestJs | MongoDb"  triggers="mouseenter:mouseleave">
+                  <h5>Rey Invest - Projeto meu para estudo do Angular e NestJs</h5>
+                </div>
+              </slide>
+            </carousel>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <h1 class="profile-title text-left">Projetos</h1>
+          <h5 class="text-on-back">Meus</h5>
+          <p class="profile-description text-left">
+            Esses são os projetos que eu trabalhei e ajudei na criação/manutenção, sempre utilizando Angular 6+.
+            Atualmente estou focando em desenvolvimento com node estudando profundamente Angular e NestJs com banco não relacional MongoDb. 
+          </p>
+          <p>Obs: Sistema Quality e Gestox são da empresa que trabalhei logo não estarão no github</p>
+          <div class="btn-wrapper pt-3">
+            <a
+              class="btn btn-simple btn-info"
+              href="https://github.com/Khauam-Kleber"
+              target="_blank"
+            >
+              <i class="fab fa-github"> </i> Github
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card card-plain">
+            <div class="card-header">
+              <h1 class="profile-title text-left">Contate</h1>
+              <h5 class="text-on-back">Me</h5>
+            </div>
+            <div class="card-body">
+              <app-form-contato popover="Form feito com Reactive Forms + API para envio de Email :)"  triggers="mouseenter:mouseleave" ></app-form-contato>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 ml-auto">
+          <div class="info info-horizontal">
+            <div class="icon icon-danger">
+              <i class="tim-icons icon-square-pin"> </i>
+            </div>
+            <div class="description">
+              <h4 class="info-title">Onde eu moro?</h4>
+              <p>
+                Cidade Industrial <br />
+
+                Curitiba <br />
+
+                Paraná
+              </p>
+            </div>
+          </div>
+          <div class="info info-horizontal">
+            <div class="icon icon-danger">
+              <i class="tim-icons icon-mobile"> </i>
+            </div>
+            <div class="description">
+              <h4 class="info-title">Mais Infos</h4>
+              <p>
+                24 anos, solteiro <br />
+
+                Email: khauam@hotmail.com <br />
+
+                Tel: (041) 99620-1262 <br />
+
+                Pretenção Salarial: 5k CLT | 7.5k PJ
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <!-- footer todo retirado -->
+  </footer>
+</div>

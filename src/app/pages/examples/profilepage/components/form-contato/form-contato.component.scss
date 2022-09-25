@@ -1,0 +1,16 @@
+//input outline color
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
+    color: rgb(85, 85, 85)!important;
+    // opacity: 1!important;
+}
+
+// .mat-form-field{
+//     color: white;
+// }
+
+mat-form-field {
+    color: white;
+    ::placeholder {
+       color: white;
+    }
+ }

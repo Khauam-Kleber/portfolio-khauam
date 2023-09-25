@@ -37,14 +37,9 @@ export class FormContatoComponent implements OnInit {
 
     this.contatoService.PostMessage(this.formContato.value).subscribe(response => {
       location.href = 'https://mailthis.to/confirm'
-      console.log(response)
     }, error => {
       console.warn(error.responseText)
-      console.log({ error })
     })
-
-    console.log(this.formContato.value);
-    
   }
 
 

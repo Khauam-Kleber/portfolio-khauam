@@ -1,10 +1,10 @@
 
 const ELEMENT_DATA: any[] = [
-  {tecnologia: "Angular", tempo: 3},
+  {tecnologia: "Angular", tempo: 5.6},
+  {tecnologia: "HTML", tempo: 5.6},
+  {tecnologia: "CSS", tempo: 5.6},
   {tecnologia: "Java (spring boot)", tempo: 3.9},
   {tecnologia: "MySql", tempo: 3.9},
-  {tecnologia: "HTML", tempo: 3.9},
-  {tecnologia: "CSS", tempo: 3.9},
 ];
 
 import {AfterViewInit, Component, ViewChild} from '@angular/core';
@@ -19,7 +19,6 @@ import {MatTable, MatTableDataSource,} from '@angular/material/table';
 
 export class TabelaConhecimentosComponent implements AfterViewInit {
  
-  // form: any;
   listaCadastrados: any = []
   displayedColumns: string[] = ['tecnologia', 'tempo'];
   @ViewChild(MatTable) table: MatTable<any>;
@@ -28,45 +27,13 @@ export class TabelaConhecimentosComponent implements AfterViewInit {
   dataSource = new MatTableDataSource<any>();
 
   constructor() { 
-    // this.criarForm();
     this.dataSource = new MatTableDataSource(ELEMENT_DATA);
-    
   }
 
   ngAfterViewInit() {
     
     this.dataSource.sort = this.sort;
   }
-
-  // criarForm(){
-  //   this.form = this.formBuilder.group({
-  //     id: [],
-  //     nome:  ['', Validators.required ],
-  //     telefone: ['', Validators.required ],
-  //   });
-  // }
-
-  // get formControls() { return this.form.controls; }
-
-  // criarEPreencherTabela(){
-  //   if (this.form.invalid) {
-  //     return;
-  //   }
-
-  //   this.form.get('id').setValue(this.listaCadastrados.length + 1)
-  //   this.listaCadastrados.push(this.form.value)
-  //   this.form.reset()
-  //   this.dataSource = new MatTableDataSource(this.listaCadastrados );
-  //   this.table.renderRows();
-
-  //   setTimeout(() => {
-  //     this.dataSource.sort = this.sort;
-  //   }, 1000);
-  // }
-
-  // limparForm(){
-  //   this.form.reset()
-  // }
 
   removeData() {
     this.listaCadastrados.pop();

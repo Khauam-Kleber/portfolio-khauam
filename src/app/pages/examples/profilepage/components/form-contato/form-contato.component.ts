@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, Validators } from '@angular/forms';
+import { UntypedFormBuilder, Validators } from '@angular/forms';
 import { ContatoService } from 'src/app/services/contato.service';
 
 @Component({
@@ -11,7 +11,7 @@ export class FormContatoComponent implements OnInit {
 
   formContato: any;
   
-  constructor(private formBuilder:FormBuilder, private contatoService: ContatoService) { 
+  constructor(private formBuilder:UntypedFormBuilder, private contatoService: ContatoService) { 
     this.criarForm();
   }
 

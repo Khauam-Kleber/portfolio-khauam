@@ -1,10 +1,14 @@
 
 const ELEMENT_DATA: any[] = [
-  {tecnologia: "Angular", tempo: 5.6},
-  {tecnologia: "HTML", tempo: 5.6},
-  {tecnologia: "CSS", tempo: 5.6},
-  {tecnologia: "Java (spring boot)", tempo: 3.9},
-  {tecnologia: "MySql", tempo: 3.9},
+  {tecnologia: "Angular", tempo: 6},
+  {tecnologia: "HTML", tempo: 6},
+  {tecnologia: "CSS", tempo: 6},
+  {tecnologia: "Api REST", tempo: 6},
+  {tecnologia: "JIRA", tempo: 6},
+  {tecnologia: "GIT", tempo: 6},
+  {tecnologia: "Java (spring boot)", tempo: 4},
+  {tecnologia: "SQL", tempo: 6},
+  {tecnologia: "Docker", tempo: 2},
 ];
 
 import {AfterViewInit, Component, ViewChild} from '@angular/core';

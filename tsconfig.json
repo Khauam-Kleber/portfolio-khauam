@@ -6,9 +6,10 @@
     "esModuleInterop": true,
     "sourceMap": true,
     "declaration": false,
-    "module": "es2015",
+    "module": "es2020",
     "moduleResolution": "node",
     "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
     "importHelpers": true,
     "target": "ES2022",
     "typeRoots": [
@@ -18,6 +19,15 @@
       "es2018",
       "dom"
     ],
-    "useDefineForClassFields": false
+    "useDefineForClassFields": false,
+    "allowSyntheticDefaultImports": true
+  },
+  "angularCompilerOptions": {
+    "strictTemplates": true,
+    "strictInjectionParameters": true,
+    "enableIvy": true,
+    "compilationMode": "partial",
+    "fullTemplateTypeCheck": false,
+    "declarationMap": false
   }
 }

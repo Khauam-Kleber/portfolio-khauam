@@ -1,14 +1,14 @@
 <form [formGroup]="formContato" (ngSubmit)="enviarEmailContato()">
-    <div class="row">
+    <div class="row pb-2">
       <div class="col-md-6">
-        <mat-form-field fxFlex="100" class="" appearance="outline">
+        <mat-form-field  fxFlex="100" class="" appearance="outline">
           <mat-label> Nome: </mat-label>
           <input matInput class="" formControlName="nome" type="text" />
           <mat-error *ngIf="formControls.nome.errors && formControls.nome.errors.required">Escreva seu Nome</mat-error>
         </mat-form-field>
       </div>
       <div class="col-md-6">
-        <mat-form-field fxFlex="100" class="" appearance="outline">
+        <mat-form-field  fxFlex="100" class="" appearance="outline">
           <mat-label> Email: </mat-label>
           <input matInput formControlName="email"
             class=" "

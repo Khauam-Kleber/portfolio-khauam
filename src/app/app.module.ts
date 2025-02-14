@@ -6,7 +6,6 @@ import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { provideHttpClient, withInterceptorsFromDi } from "@angular/common/http";
 
-import { BsDropdownModule } from "ngx-bootstrap/dropdown";
 import { ProgressbarModule } from "ngx-bootstrap/progressbar";
 import { TooltipModule } from "ngx-bootstrap/tooltip";
 import { CollapseModule } from "ngx-bootstrap/collapse";
@@ -37,7 +36,6 @@ import { ContatoService } from "./services/contato.service";
         FormsModule,
         RouterModule,
         AppRoutingModule,
-        // BsDropdownModule.forRoot(),
         // ProgressbarModule.forRoot(),
         // TooltipModule.forRoot(),
         // CollapseModule.forRoot(),

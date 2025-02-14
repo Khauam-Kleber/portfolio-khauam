@@ -1,16 +1,10 @@
-//input outline color
-::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
-    color: rgb(85, 85, 85)!important;
-    // opacity: 1!important;
-}
+@use '@angular/material' as mat;
 
-// .mat-form-field{
-//     color: white;
-// }
-
-mat-form-field {
-    color: white;
-    ::placeholder {
-       color: white;
-    }
- }
+:host {
+    @include mat.form-field-overrides(
+      (
+        outlined-disabled-input-text-color: red,
+      )
+    )
+  }
+  

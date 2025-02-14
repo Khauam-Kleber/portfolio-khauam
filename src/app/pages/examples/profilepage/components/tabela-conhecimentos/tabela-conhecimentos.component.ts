@@ -16,9 +16,10 @@ import {MatSort} from '@angular/material/sort';
 import {MatTable, MatTableDataSource,} from '@angular/material/table';
 
 @Component({
-  selector: 'app-tabela-conhecimentos',
-  templateUrl: './tabela-conhecimentos.component.html',
-  styleUrls: ['./tabela-conhecimentos.component.scss']
+    selector: 'app-tabela-conhecimentos',
+    templateUrl: './tabela-conhecimentos.component.html',
+    styleUrls: ['./tabela-conhecimentos.component.scss'],
+    standalone: false
 })
 
 export class TabelaConhecimentosComponent implements AfterViewInit {

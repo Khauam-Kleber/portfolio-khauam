@@ -14,3 +14,9 @@
 ### Original Release
 - Added Angular as base framework
 - Added design from BLK Design System by Creative Tim
+
+
+## [1.2.0] 2025-02-14
+### Updates
+- update to Angular 11
+- update all dependencies to match Angular 11 version

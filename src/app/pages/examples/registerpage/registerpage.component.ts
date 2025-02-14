@@ -1,8 +1,9 @@
 import { Component, OnInit, OnDestroy, HostListener } from "@angular/core";
 
 @Component({
-  selector: "app-registerpage",
-  templateUrl: "registerpage.component.html"
+    selector: "app-registerpage",
+    templateUrl: "registerpage.component.html",
+    standalone: false
 })
 export class RegisterpageComponent implements OnInit, OnDestroy {
   isCollapsed = true;

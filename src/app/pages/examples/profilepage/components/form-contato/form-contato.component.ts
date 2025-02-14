@@ -3,9 +3,11 @@ import { UntypedFormBuilder, Validators } from '@angular/forms';
 import { ContatoService } from 'src/app/services/contato.service';
 
 @Component({
-  selector: 'app-form-contato',
-  templateUrl: './form-contato.component.html',
-  styleUrls: ['./form-contato.component.scss']
+    selector: 'app-form-contato',
+    templateUrl: './form-contato.component.html',
+    styleUrls: ['./form-contato.component.scss'],
+    standalone: false,
+
 })
 export class FormContatoComponent implements OnInit {
 
@@ -20,7 +22,7 @@ export class FormContatoComponent implements OnInit {
 
   criarForm(){
     this.formContato = this.formBuilder.group({
-      nome:  ['', Validators.required ],
+      nome:  ['', Validators.required],
       email: ['', [Validators.required, Validators.email] ],
       tel: ['',],
       empresa: ['',],
